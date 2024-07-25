@@ -9,15 +9,22 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Imbue', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.fondo-blanco {
+    background-color: rgba(255, 255, 255, 0.877);
+    padding: 10px;
+    display: inline-block;
+}
+
 header {
-    background-color: #333;
-    color: white;
+    background-color: #f8f8f8;
+    color: rgba(8, 7, 7, 0.692);
     padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -33,8 +40,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #136131;
 }
 
 main {
@@ -44,6 +55,12 @@ main {
 
 h1, h2 {
     font-family: 'Imperial Script', cursive;
+    font-size: 80px;
+}
+
+.fuente-imperial {
+    font-family: 'Imperial Script', cursive;
+    font-size: x-large;
 }
 
 ul {
@@ -53,4 +70,68 @@ ul {
 
 ul li {
     margin: 10px 0;
+}
+
+
+.fondo-principal{
+    background-image: url("../assets/img/eucalyptus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo-secundario{
+    background-image: url("../assets/img/fondo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Codigo para index*/
+
+.destacados {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* .producto {
+    margin: 20px;
+    text-align: center;
+}
+
+.producto a {
+    max-width: 100%;
+    height: auto;
+} */
+
+.destacado-item img {
+    width: 200px;
+    height: auto;
+}
+
+.destacado-item p {
+    font-family: 'Imperial Script', cursive;
+    display: block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #555;
 }
