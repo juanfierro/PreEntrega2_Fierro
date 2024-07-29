@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo - MiBouquet</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- url de los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -18,73 +18,74 @@
                 <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
-    </header>
+    </header>   
     <main class="fondo-secundario">
-        <h1>Catálogo</h1>
-        <section>
-            <input type="text" placeholder="Buscar productos">
-            <button><i class="fas fa-search"></i></button>
+        <section class="search-section">
+            <h1>Catálogo</h1>
+            <input type="text" placeholder="Buscar productos..."><i class="fas fa-search"></i>
         </section>
-        <section>
-            <div>
-                <img src="../assets/img/flor_de_solapa.jpg">
-                <div >
+        <section class="product-grid">
+            <div class="product-item">
+                <img src="../assets/img/flor_de_solapa.jpg" alt="Producto 1">
+                <div class="product-details">
+                    <p>Producto 1 - $10</p>
                     <input type="number" value="1" min="1">
-                    <span>$20</span>
                     <button><i class="fas fa-cart-plus"></i></button>
                 </div>
             </div>
-            <div>
-                <img src="../assets/img/centros_de_mesa.jpg">
-                <div >
+            <div class="product-item">
+                <img src="../assets/img/centros_de_mesa.jpg" alt="Producto 2">
+                <div class="product-details">
+                    <p>Producto 2 - $15</p>
                     <input type="number" value="1" min="1">
-                    <span >$25</span>
                     <button><i class="fas fa-cart-plus"></i></button>
                 </div>
             </div>
-            <div>
-                <img src="../assets/img/coronas.jpg">
-                <div >
+            <div class="product-item">
+                <img src="../assets/img/coronas.jpg" alt="Producto 3">
+                <div class="product-details">
+                    <p>Producto 3 - $20</p>
                     <input type="number" value="1" min="1">
-                    <span >$30</span>
                     <button><i class="fas fa-cart-plus"></i></button>
                 </div>
             </div>
-            <div >
-                <img src="../assets/img/pulseras.jpg">
-                <div >
+            <div class="product-item">
+                <img src="../assets/img/pulseras.jpg" alt="Producto 4">
+                <div class="product-details">
+                    <p>Producto 4 - $25</p>
                     <input type="number" value="1" min="1">
-                    <span >$15</span>
                     <button><i class="fas fa-cart-plus"></i></button>
                 </div>
             </div>
-            <div>
-                <img src="../assets/img/ramos.jpg">
-                <div >
+            <div class="product-item">
+                <img src="../assets/img/ramo_blanco.jpg" alt="Producto 5">
+                <div class="product-details">
+                    <p>Producto 5 - $30</p>
                     <input type="number" value="1" min="1">
-                    <span >$18</span>
                     <button><i class="fas fa-cart-plus"></i></button>
                 </div>
             </div>
-            <div >
-                <img src="../assets/img/estructuras.jpg">
-                <div >
+            <div class="product-item">
+                <img src="../assets/img/estructuras.jpg" alt="Producto 6">
+                <div class="product-details">
+                    <p>Producto 6 - $35</p>
                     <input type="number" value="1" min="1">
-                    <span >$22</span>
                     <button><i class="fas fa-cart-plus"></i></button>
                 </div>
             </div>
         </section>
-        <button >Mostrar más <i class="fas fa-chevron-down"></i></button>
+        <section class="load-more">
+            <button>Mostrar más <i class="fas fa-chevron-down"></i></button>
+        </section>
     </main>
     <footer>
-        <p>Copyright &copy; 2024 MiBouquet</p>
+        <p>&copy; MiBouquet 2024</p>
         <p><i class="fas fa-envelope"></i> mibouquet@gmail.com</p>
         <p><i class="fas fa-phone"></i> +54 351 1231231</p>
-        <p>
+        <div class="social-icons">
             <i class="fab fa-whatsapp"></i>
             <i class="fab fa-instagram"></i>
-        </p>
+        </div>
     </footer>
 </body>
 </html>
