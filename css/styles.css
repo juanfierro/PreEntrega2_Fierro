@@ -44,28 +44,51 @@ header {
 
 
 
-nav ul {
-    list-style-type: none;
+.navbar {
     display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
+    flex-direction: column; /* Diseño en columna para móviles */
     align-items: center;
 }
 
-nav ul li {
-    margin: 0 15px;
+.navbar-brand {
     font-size: 1.5rem;
-}
-
-nav ul li a {
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
-nav ul li a:hover {
-    color: #136131;
+.navbar-toggler {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
+
+.navbar-collapse {
+    width: 100%;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.nav-item {
+    margin: 10px 0; 
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
 
 main {
     padding: 20px;
@@ -280,7 +303,7 @@ footer .footer-row p:last-child {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 50px;
 }
 
 .product-item {
@@ -364,7 +387,7 @@ footer .footer-row p:last-child {
 
 .card {
     width: 230px;
-    height: 300px;
+    height: 400px;
     background-color: #f8f8f8ce;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -638,6 +661,24 @@ footer .footer-row p:last-child {
         flex-direction: row;
     } 
 
+    .navbar {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar-nav {
+        flex-direction: row; 
+    }
+
+    .nav-item {
+        margin: 0 10px; 
+    }
+
 }
 
 /* "Se cumpliran las siguientes condiciones siempre y cuando el ancho de pantalla 
@@ -721,6 +762,23 @@ sea como minimo 769 px en adelante" (Desktop) */
         text-align: center;
     }
 
+    .navbar {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-item {
+        margin: 0 20px; 
+    }
 }
 
 
